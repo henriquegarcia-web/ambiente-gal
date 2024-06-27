@@ -1,0 +1,1 @@
+export const Tipos = [{id:1,nome:'Venda Aprovada'}]

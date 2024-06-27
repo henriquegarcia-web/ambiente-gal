@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "cardoso02",
+    "password": "Ad64cBSYUfTgVMPX",
+    "database": "plataforma",
+    "host": "147.182.160.164",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "cardoso",
+    "password": "5258",
+    "database": "wolfy",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "cardoso",
+    "password": "5258",
+    "database": "wolfy",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,1 @@
+export const Tipos = [{id:1,nome:'Produto Principal'},{id:2,nome:'Order Bump'},{id:3,nome:'Downsell'}]

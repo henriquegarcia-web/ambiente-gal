@@ -1,0 +1,95 @@
+import { DataTypes,Model } from "sequelize";
+import { sequelize } from "../instances/postgres";
+
+export interface Checkout extends Model{
+    id: number,
+    idProdutor:number,
+    idCupom:number,
+    idPixel:number,
+    idProduto:string,
+    nome:string,
+    descricao:string,
+    time:TimeRanges,
+    link:string,
+    imagem:string,
+    recorrencia:string,
+    status:boolean,
+    postback:string,
+    corPrimaria:string,
+    corSecundaria:string,
+    corTerciaria:string,
+    statusEndereco:string,
+    statusCupom:string,
+    statusTimer:string,
+    statusEmail:string
+}
+export const Checkout = sequelize.define<Checkout>('checkout',{
+    id:{
+        primaryKey:true,
+        autoIncrement:true,
+        type:DataTypes.NUMBER
+    },
+    idProdutor:{
+        type:DataTypes.NUMBER
+    },
+    idCupom:{
+        type:DataTypes.STRING
+    },
+    idPixel:{
+        type:DataTypes.NUMBER
+    },
+    idProduto:{
+        type:DataTypes.STRING
+    },
+    nome:{
+        type:DataTypes.STRING
+    },
+    descricao:{
+        type:DataTypes.STRING
+    },
+    time:{
+        type:DataTypes.TIME
+    },
+    link:{
+        type:DataTypes.STRING
+    },
+    imagem:{
+        type:DataTypes.STRING
+    },
+    recorrencia:{
+        type:DataTypes.STRING
+    },
+    status:{
+        type:DataTypes.BOOLEAN
+    },
+    postback:{
+        type:DataTypes.STRING
+    },
+    corPrimaria:{
+        type:DataTypes.STRING
+    },
+    corSecundaria:{
+        type:DataTypes.STRING
+    },
+    corTerciaria:{
+        type:DataTypes.STRING
+    },
+    corQuaternaria:{
+        type:DataTypes.STRING
+    },
+    statusEndereco:{
+        type:DataTypes.STRING
+    },
+    statusCupom:{
+        type:DataTypes.STRING
+    },
+    statusTimer:{
+        type:DataTypes.STRING
+    },
+    statusEmail:{
+        type:DataTypes.STRING
+    }
+},{
+    tableName:'checkout',
+    timestamps:false
+})

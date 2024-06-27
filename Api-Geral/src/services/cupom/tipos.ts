@@ -1,0 +1,1 @@
+export const Tipos = [{id:1,nome:'Porcentagem'},{id:2,nome:'Valor'}]

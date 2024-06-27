@@ -1,0 +1,1 @@
+export const Tipos = [{id:1,nome:'Pix'},{id:2,nome:'Cartão de Credito'},{id:3,nome:'Boleto'},{id:4,nome:'Recorrencia -> Cartão de Credito'}]
