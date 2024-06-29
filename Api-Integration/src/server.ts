@@ -19,9 +19,9 @@ const ErrorHandle: ErrorRequestHandler = (error, req, res, next) => {
   }
 };
 app.use(ErrorHandle);
-app.use((req, res) => {
-  res.json({ error: "Acesso negado!" });
-});
+// app.use((req, res) => {
+//   res.json({ error: "Acesso negado!" });
+// });
 
 app.get("/teste", (req, res) =>
   res.json({ message: "Welcome to this new API!" })
