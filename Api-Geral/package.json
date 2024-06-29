@@ -8,7 +8,6 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@img/sharp-darwin-arm64": "^0.33.0",
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.15",
     "@types/dotenv": "^8.2.0",
