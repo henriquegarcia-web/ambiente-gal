@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+const withFonts = require("next-fonts");
+const withPlugins = require("next-compose-plugins");
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -8,4 +11,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = nextConfig;
+module.exports = withPlugins([withFonts], nextConfig);

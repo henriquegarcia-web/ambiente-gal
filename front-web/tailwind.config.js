@@ -8,7 +8,6 @@ export const content = [
   // Or if using `src` directory:
   "./src/**/*.{js,ts,jsx,tsx,mdx}",
 ];
-export const sans = ["Inter"];
 export const theme = {
   colors: {
     primary: {
