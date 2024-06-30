@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
   }
 
 const axiosInstance = axios.create({
-    baseURL:`${process.env.NEXT_PUBLIC_API_URL}/produtor`,
+    baseURL:`${process.env.NEXT_PUBLIC_API_URL}/usuario`,
     headers:{
     'Authorization':`Bearer ${obj?.token}`,
     'Content-Type':'application/json'
