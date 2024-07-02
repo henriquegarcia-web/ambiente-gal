@@ -7,7 +7,7 @@ import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { Form } from "reactstrap";
 import { useFormik } from "formik";
 import { object, string, ref, bool } from "yup";
-import { Api } from "@/api/apiUser";
+import { Api } from "@/api/apiProdutor";
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700", "900"],
   subsets: ["latin"],
