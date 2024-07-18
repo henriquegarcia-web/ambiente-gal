@@ -6,9 +6,9 @@ if (typeof window !== 'undefined') {
 }
 const axiosInstance = axios.create({
     baseURL: `${process.env.NEXT_PUBLIC_API_URL}/usuario`,
-    headers: {
-        'Authorization': `Bearer ${obj?.token}`
-    }
+    // headers: {
+    //     'Authorization': `Bearer ${obj?.token || ''}`
+    // }
 })
 
 
@@ -18,6 +18,7 @@ export const Api = {
         return response.data
     },
     Cadastrar: async (dados) => {
+        console.log("AQQQ")
         let response = await axiosInstance.post('/', dados)
         return response.data
     },

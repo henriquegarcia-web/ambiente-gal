@@ -3,6 +3,7 @@ import { ValidarEmail } from "./validarEmail"
 
 export const Cadastrar = async (body:any) =>{
     let {nome,email,permissao,password} = body
+    console.log(body)
     const permissoesPermitidas:any = {1: true,4: true,5: true};
     let resposta:any
     if(email && permissao && password){

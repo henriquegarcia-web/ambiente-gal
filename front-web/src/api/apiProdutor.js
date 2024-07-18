@@ -11,7 +11,7 @@ if (typeof window !== "undefined") {
 const axiosInstance = axios.create({
   baseURL: `${process.env.NEXT_PUBLIC_API_URL}/produtor`,
   headers: {
-    Authorization: `Bearer ${obj?.token}`,
+    // Authorization: `Bearer ${obj?.token}`,
     "Content-Type": "application/json",
   },
 });

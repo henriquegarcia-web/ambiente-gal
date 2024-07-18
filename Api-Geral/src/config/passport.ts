@@ -6,7 +6,7 @@ import {ExtractJwt, Strategy as JWTStrategy} from 'passport-jwt'
 import { Usuario } from "../models/usuario"
 
 dotenv.config()
-const notAuthorizedJson = {status:401,message:'Não autorizado'}
+const notAuthorizedJson = {status:401,message:'Não autorizadoaa'}
 const options = {
     jwtFromRequest:ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey:process.env.JWT_SECRET as string
